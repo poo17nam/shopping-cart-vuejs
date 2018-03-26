@@ -116,7 +116,7 @@ methods:{
 
       axios.post('http://139.59.35.188:3000/order',data)
       .then(response =>{
-        console.log(JSON.stringify("Order details:",response.data));
+        console.log("Order details:",JSON.stringify(response.data));
         $('#myModal').modal('hide');
         if(response.data.code == 200){
           swal({
