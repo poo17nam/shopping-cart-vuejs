@@ -2,6 +2,7 @@
 
 A simple order management system similar to a shopping cart model found on a typical consumer website.
 
+![No image available](https://raw.githubusercontent.com/poo17nam/shopping-cart-vuejs/master/server/public/view.png)
 
 ## Getting Started
 
