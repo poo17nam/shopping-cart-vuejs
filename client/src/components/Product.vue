@@ -81,7 +81,7 @@ import Header from './Header.vue'
 import axios from 'axios';
 export default {
   created(){
-    axios.get('http://localhost:3000/product')
+    axios.get('http://139.59.35.188:3000/product')
     .then(response =>{
       console.log(response);
       this.products = response.data;
@@ -114,9 +114,9 @@ methods:{
       let data = {'cart':this.cartItems,'token':this.$store.state.token}
       console.log("token:",this.$store.state.token)
 
-      axios.post('http://localhost:3000/order',data)
+      axios.post('http://139.59.35.188:3000/order',data)
       .then(response =>{
-        console.log(JSON.stringify(response.data.decoded));
+        console.log(JSON.stringify("Order details:",response.data));
         $('#myModal').modal('hide');
         if(response.data.code == 200){
           swal({

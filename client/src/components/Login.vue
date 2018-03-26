@@ -59,7 +59,7 @@ data(){
       methods : {
         submitted() {
 
-          axios.post('http://localhost:3000/login',{email:this.email,password:this.password})
+          axios.post('http://139.59.35.188:3000/login',{email:this.email,password:this.password})
           .then(response =>{
             console.log(JSON.stringify(response));
             this.result = response.data;
